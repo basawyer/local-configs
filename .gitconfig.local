@@ -1,0 +1,9 @@
+[alias]
+  mup = merge --ff-only @{u}
+  rum = rebase origin/master
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lum = log ...origin/master --left-right --graph --cherry-mark --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lup = log ...@{u} --left-right --graph --cherry-mark --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+  name = Blake Sawyer
+  email = basawyer@gmail.com
